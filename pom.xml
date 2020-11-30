@@ -1,8 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.akhiltest</groupId>
-    <artifactId>akhiltest-repo</artifactId>
-    <version>1.0.0</version>
+    <groupId>com.akhiltest2</groupId>
+    <artifactId>akhiltest-repoid</artifactId>
+    <version>1.2.1</version>
+    <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/akhilponnala/testnew2</url>
+    </repository>
+  </distributionManagement>
     <dependencies>
         <dependency>
             <groupId>com.google.protobuf</groupId>
@@ -77,10 +84,4 @@
             </plugins>
         </pluginManagement>
     </build>
-    <distributionManagement>
-        <repository>
-            <id>internal</id>
-            <url>file://${project.build.directory}/mvn-repo</url>
-        </repository>
-    </distributionManagement>
 </project>
